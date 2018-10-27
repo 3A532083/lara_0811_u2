@@ -80,7 +80,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
-                    <a href="{{ route('hello.index') }}">Hello</a>
+                    <a href="{{ route('hello.index', ['name'=>'Tom']) }}">Hello</a>
                 </div>
 
                 <div class="links">

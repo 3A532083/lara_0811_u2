@@ -11,8 +11,12 @@
 |
 */
 
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
 Route::get('say/{name?}', ['as' => 'hello.index', function($name = 'Everybody') {
 
 
-    return view('welcome');
+    return 'Hello, '.$name;
 }]);
