@@ -7,8 +7,6 @@ Route::get('welcome', function () {
 });
 
 Route::get('say/{name?}', ['as' => 'hello.index', function($name = 'Everybody') {
-
-
     return 'Hello, '.$name;
 }]);
 
